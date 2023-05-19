@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+coverage
+.git
+dist
+site-dist
+.idea
+es
+dist
+converage
+lib
+packages/**/dist
+packages/**/node_modules
+.dumi
+
+**/dist
+**/**/dist

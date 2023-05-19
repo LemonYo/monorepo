@@ -1,0 +1,27 @@
+{
+  "name": "@depeak/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "mudule": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "dist/es",
+    "dist/lib",
+    "package.json"
+  ],
+  "scripts": {
+    "generator-api": "rm -rf src/api && esno ./scripts/openapi.config.ts",
+    "build": "father build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openapi",
+    "api",
+    "dipeak",
+    "dipeak-api",
+    "x-engine"
+  ],
+  "author": "dipeak-fe",
+  "license": "MIT"
+}

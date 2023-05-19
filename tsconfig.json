@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    // 不生成输出文件
+    "noEmit": false,
+    // 仅输出 d.ts 文件，不输出 JavaScript 文件。
+    "emitDeclarationOnly": true,
+    // 从项目中的 TypeScript 和 JavaScript 文件生成 .d.ts 文件。
+    "declaration": true,
+    "strict": true,
+    "target": "ES2015",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "lib": ["esnext", "dom"],
+    // "include": ["packages/**/*.ts", "packages/**/*.d.ts", "packages/**/*.tsx"],
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+// @ts-ignore
+/* eslint-disable */
+// API 更新时间：{{ apiResourceModifyTime }}
+// API 唯一标识：{{ apiResourceId }}
+{% for item in data %}
+    import {
+      {{item.functionNames.join(', \n')}}
+    } from './{{ item.fileName }}'
+{% endfor %}
+
+export default {
+  {{ allFunctionsName.join(', \n') }}
+}

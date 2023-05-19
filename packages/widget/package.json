@@ -1,0 +1,26 @@
+{
+  "name": "@dipeak/widget",
+  "version": "1.0.0",
+  "description": "dipeak",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "typings": "./lib/index.d.ts",
+  "files": [
+    "dist/es",
+    "dist/lib",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "father build && pnpm run build:less",
+    "dev": "father dev",
+    "build:less": "esno ./scripts/buildLess.ts"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less"
+  ],
+  "keywords": [],
+  "author": "dipeak fe",
+  "license": "MIT"
+}
