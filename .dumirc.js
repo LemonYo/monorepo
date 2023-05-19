@@ -2,7 +2,8 @@ import { defineConfig } from 'dumi'
 import { defineThemeConfig } from 'dumi-theme-chakra'
 import { description, keywords, author } from './package.json'
 
-const repo = 'web-design' // 仓库名称
+// const repo = 'web-design' // 仓库名称
+const repo = 'monorepo'
 function withGh(uri = '') {
 	const prefix = process.env.MODE === 'prod' ? `/${repo}/` : '/'
 	return [prefix, uri].join('')

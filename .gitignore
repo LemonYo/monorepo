@@ -12,6 +12,6 @@ lib
 packages/**/dist
 packages/**/node_modules
 .dumi
-
+packages/api/src/api
 **/dist
 **/**/dist

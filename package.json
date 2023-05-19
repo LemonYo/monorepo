@@ -10,7 +10,7 @@
 		"prettier": "prettier --write ./packages",
 		"docs:dev": "cross-env MODE=dev dumi dev",
 		"docs:build": "cross-env MODE=prod dumi build",
-		"docs:deploy": "gh-pages -d site/dist",
+		"docs:deploy": "gh-pages -d dist",
 		"eslint": "eslint . --fix"
 	},
 	"keywords": [
