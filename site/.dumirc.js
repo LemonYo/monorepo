@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi'
 import { defineThemeConfig } from 'dumi-theme-chakra'
-import { description, keywords, author } from './package.json'
+import { description, keywords, author } from '../package.json'
 
 // const repo = 'web-design' // 仓库名称
 const repo = 'monorepo'
@@ -26,8 +26,8 @@ export default defineConfig({
 	// theme
 	themeConfig: {
 		nprogress: true,
-		// logo: withGh('logo.jpeg'),
-		logo: false,
+		logo: withGh('logo.jpeg'),
+		// logo: false,
 		footer: '',
 		...defineThemeConfig({
 			helmetIcon: '🍺',

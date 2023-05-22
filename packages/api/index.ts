@@ -1,1 +1,1 @@
-import API from "./servers/api"
+import API from './servers/api'

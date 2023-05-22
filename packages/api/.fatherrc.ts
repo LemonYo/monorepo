@@ -1,7 +1,4 @@
-import { defineConfig } from "father"
+import { defineConfig } from 'father'
 export default defineConfig({
-    extends: '../../.fatherrc.base.ts',
-    esm: {
-        transformer: 'esbuild'
-    }
+	extends: '../../.fatherrc.base.ts',
 })

@@ -15,3 +15,5 @@ packages/**/node_modules
 packages/api/src/api
 **/dist
 **/**/dist
+**/**/.DS_Store
+packages/api/src/.DS_Store

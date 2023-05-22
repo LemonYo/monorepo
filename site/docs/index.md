@@ -4,10 +4,12 @@ hero:
   title: dipeak-design
   description: 基础物料中心, api util components cli 通用方案落地
   actions:
-    - text: 指南
-      link: /guide
     - text: 组件
       link: /components
+    - text: api
+      link: /api
+    - text: 指南
+      link: /guide
 features:
   - emoji: 💡
     title: 业务提炼

@@ -1,4 +1,4 @@
 export interface ButtonProps {
-    name: string,
-    children: any
+	name: string
+	children: any
 }

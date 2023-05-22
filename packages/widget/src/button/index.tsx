@@ -4,14 +4,9 @@ import { ButtonProps } from './interface'
 import './style/index.less'
 
 function CustomButton(props: ButtonProps) {
-    const {
-        name = '',
-        ...other
-    } = props
+	const { name = '', ...other } = props
 
-    return (
-        <Button {...other}>{props.children}</Button>
-    )
+	return <Button {...other}>{props.children}</Button>
 }
 
 export default CustomButton

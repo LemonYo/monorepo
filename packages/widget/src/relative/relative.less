@@ -1,0 +1,42 @@
+.reltivePopover {
+	min-width: 240px;
+	position: absolute;
+	background-color: #ffffff;
+	background-clip: padding-box;
+	border-radius: 8px;
+	box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+	padding: 12px;
+	transform: translateY(-50%) translateX(20px);
+}
+
+.relativePopoverArrow {
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	border-radius: 0 0 2px;
+	pointer-events: none;
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	top: 50%;
+	left: 0;
+	transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+
+.relativePopoverContent {
+	padding: 0 4px;
+	line-height: 24px;
+}
+
+.relativeMiniMap {
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	padding: 8px;
+	background-color: #f4f4f4;
+	background-clip: padding-box;
+	border: 8px solid rgba(34, 34, 34, 0.05);
+	box-shadow: 0 0 4px 0 #eee;
+}

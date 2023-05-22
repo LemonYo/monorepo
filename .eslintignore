@@ -4,4 +4,9 @@ webpack
 webpack.config.js
 test/*.js
 packages/**/node_modules
-docs
+packages/**/dist
+packages/api/src/api
+site/.dumi
+**/dist
+**/node_modules
+**/.dumi

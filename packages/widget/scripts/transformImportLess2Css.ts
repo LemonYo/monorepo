@@ -6,7 +6,6 @@ const transformImportLess2Css: Required<IApi['config']>['extraBabelPlugins'][0] 
 		name: 'transform-import-less-to-css',
 		visitor: {
 			ImportDeclaration(path: any) {
-				console.log(path)
 				const re = /\.less$/
 				if (re.test(path.node.source.value)) {
 					path.node.source.value = path.node.source.value.replace(re, '.css')
