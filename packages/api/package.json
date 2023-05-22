@@ -1,27 +1,35 @@
 {
-  "name": "@depeak/api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "mudule": "es/index.js",
-  "typings": "lib/index.d.ts",
-  "files": [
-    "dist/es",
-    "dist/lib",
-    "package.json"
-  ],
-  "scripts": {
-    "generator-api": "rm -rf src/api && esno ./scripts/openapi.config.ts",
-    "build": "father build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "openapi",
-    "api",
-    "dipeak",
-    "dipeak-api",
-    "x-engine"
-  ],
-  "author": "dipeak-fe",
-  "license": "MIT"
+	"name": "@depeak/api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/lib/api/index.js",
+	"mudule": "dist/es/api/index.js",
+	"typings": "dist/es/api/index.d.ts",
+	"files": [
+		"dist/es",
+		"dist/lib",
+		"package.json"
+	],
+	"scripts": {
+		"generator-api": "rm -rf src/api && esno ./scripts/openapi.config.ts",
+		"build": "father build",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"deploy": "npm publish"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"keywords": [
+		"openapi",
+		"api",
+		"dipeak",
+		"dipeak-api",
+		"x-engine"
+	],
+	"author": "dipeak-fe",
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^1.4.0"
+	}
 }

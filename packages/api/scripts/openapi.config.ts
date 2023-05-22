@@ -22,11 +22,12 @@ const generatorOpenApi = async () => {
 		serversPath,
 		apiPrefix,
 		namespace: 'dipeakApi',
+		templatesFolder: resolve('./scripts/templates'),
 		hook: {
 			customFunctionName: (data) => {
 				// 生成api名称 如 Get /api/engine/pTable  => apiEnginePTableGet
 				const functionName = genDefaultFunctionName(data.path, apiPrefix) + toUpperFirstLetter(data.method)
-				/** 
+				/**
 				 * 兼容错误命名如 /user/:id/:name
 				 * 直接将{}删除，例如 apiClusterDelete{id}Delete => apiClusterDeleteDelete
 				 * */
@@ -66,7 +67,7 @@ const generatorOpenApi = async () => {
 	}
 	// console.log(data)
 	// 输出新的index.ts 文件
-	const template = resolve('./scripts/template/serviceIndex.njk')
+	const template = resolve('./scripts/templates/updateIndex.njk')
 	// 设置输出不转义
 	nunjucks.configure({
 		autoescape: false,

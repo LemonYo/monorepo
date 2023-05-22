@@ -1,0 +1,41 @@
+.node-dag {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 1px solid #c2c8d5;
+	border-left: 4px solid #5f95ff;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.06);
+	img {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
+		margin-left: 8px;
+	}
+	.label {
+		display: inline-block;
+		flex-shrink: 0;
+		width: 140px;
+		margin: 0 8px;
+		color: #666;
+		font-size: 12px;
+	}
+	.status {
+		flex-shrink: 0;
+	}
+	&.finished {
+		border-left: 4px solid #52c41a;
+	}
+	&.running {
+		border-left: 4px solid #1677ff;
+	}
+	&.error {
+		border-left: 4px solid #ff4d4f;
+	}
+	&.unstart {
+		border-left: 4px solid #8c8c8c;
+	}
+}

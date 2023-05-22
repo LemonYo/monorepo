@@ -1,7 +1,9 @@
 import utils from './utils'
-import CustomButton from "./button"
+import CustomButton from './button'
+import Relative from './relative'
 
-export {
-    utils,
-    CustomButton
-}
+export { 
+    utils, 
+    CustomButton,
+    Relative
+ }
