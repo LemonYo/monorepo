@@ -1,6 +1,5 @@
 {
 	"name": "dipeak-design",
-	"private": "true",
 	"version": "1.0.0",
 	"description": "dipeak 内部公用逻辑，组件",
 	"main": "index.js",
